@@ -5,7 +5,7 @@ from math import sqrt
 
 def smallest_factor(number):
     """return smallest factor of a number"""
-    for i in xrange(2, int(sqrt(number))):
+    for i in xrange(2, int(sqrt(number)+1)):
         if number % i == 0:
             return i
     return False
